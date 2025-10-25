@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video autoplay muted loop id="video-bg">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-background-with-moving-lines-176-large.mp4" type="video/mp4">
+  </video>
+
+  <nav>
+    <a href="#home" class="logo">ArtGallery</a>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Paintings</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="sliding-paintings">
+      <div class="painting-left" id="painting-left"></div>
+      <div class="painting-right" id="painting-right"></div>
+    </div>
+    <div class="home-content">
+      <h1>Welcome to ArtGallery</h1>
+      <p>Discover amazing artworks from talented artists around the world</p>
+      <a href="#projects" class="btn">Explore Artworks</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Our Gallery</h2>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="https://www.sydney.edu.au/content/dam/corporate/images/chau-chak-wing-museum/whats-on/exhibitions/2024/24th-biennale-of-sydney-/biennale-of-sydney-header-2.jpg" alt="Gallery Image">
+      </div>
+      <div class="about-content">
+        <h2>Our Vision</h2>
+        <p>ArtGallery curates exceptional artwork from contemporary and emerging artists. We strive to create a platform where art enthusiasts can explore, appreciate, and collect art pieces.</p>
+        <p>Join us in celebrating creativity and innovation through a wide variety of mediums and styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Paintings</h2>
+    <div class="projects-container">
+      <p>All painting cards here (copied from original).</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 456 Art Street, City, Country</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+        <p><i class="fas fa-envelope"></i> info@artgallery.com</p>
+        <p><i class="fas fa-clock"></i> Mon - Sat: 10:00 AM - 7:00 PM</p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">ArtGallery</div>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; 2023 ArtGallery. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-to-top" id="scrollToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
